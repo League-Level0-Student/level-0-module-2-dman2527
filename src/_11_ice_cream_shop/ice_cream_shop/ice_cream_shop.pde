@@ -7,7 +7,11 @@ void setup(){
      //Use the method to add sprinkles to your ice cream
 
      //Write code to add a cherry to the top of your ice cream. hint: ellipse
-
+makeIceCreamCone();
+addScoop("vanilla");
+addSprinkle(100);
+fill(#B73F3F);
+ellipse(250,175,75,75);
 }
 
 /******************************************************************/
@@ -57,4 +61,5 @@ void addSprinkle(int numberOfSprinkles){
          int sprinkleHeight = (int)random(2,9);
          ellipse(sprinkleAreaX,sprinkleAreaY,sprinkleHeight,sprinkleWidth);
      }
+
 }
